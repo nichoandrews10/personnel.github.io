@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+    <link rel="stylesheet" href="./css-files/login.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Login</h1>
+        <form action="#" onsubmit="event.preventDefault(); validateForm()">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <label for="email" class="details">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="password" class="details">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <small class="error"></small>
+                </div>
+                
+                <div class="terms-and-condition">
+                    <input type="checkbox" name="dot-1" id="dot-1">
+                    <div class="tnc">
+                        <label class="tnc-label" for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="terms">Remember credentials?</span>
+                        </label>
+                        <small class="error"></small>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" class="submit" value="Login" onclick="openIndex()">
+                    <p id="success"></p>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="register">
+            <p>Don't have an account? <a href="register.html">Register</a></p>
+        </div>
+
+    </div>
+
+    <script src="./js-files/login.js"></script>
+</body>
+</html>

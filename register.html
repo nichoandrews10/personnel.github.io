@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+    <link rel="stylesheet" href="./css-files/register.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="title">Register</h1>
+        <form action="#" onsubmit="event.preventDefault(); validateForm()">
+            <div class="user-details">
+
+                <div class="input-box">
+                    <label for="name" class="details">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="address" class="details">Address</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="birth-date" class="details">Birth Date</label>
+                    <input type="date" id="birth-date" placeholder="Enter your birth date">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="email" class="details">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="password" class="details">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <label for="phone-number" class="details">Phone Number</label>
+                    <input type="text" id="phone-number" placeholder="Enter your phone number">
+                    <small class="error"></small>
+                </div>
+
+                <div class="terms-and-condition">
+                    <input type="checkbox" name="dot-1" id="dot-1">
+                    <div class="tnc">
+                        <label class="tnc-label" for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="terms">Agree to our <a href="terms.html">terms and condition</a></span>
+                        </label>
+                        <small class="error"></small>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input type="submit" class="submit" value="Register" onclick="openIndex()">
+                    <p id="success"></p>
+                </div>
+
+            </div>
+        </form>
+
+        <div class="login">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+
+    </div>
+
+    <script src="./js-files/register.js"></script>
+</body>
+</html>

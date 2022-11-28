@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+    <!-- Material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css-files/settings.css">
+    <link rel="stylesheet" href="./css-files/side-bar.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Side Bar Start -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo/personnel-logo.png" alt="">
+                    <h2>PERSON<span class="primary">NEL</span></h2>
+                </div>
+                <div>
+                    <div class="close" id="close-btn">
+                        <span class="material-symbols-rounded">close</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-symbols-rounded">space_dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="employees.html">
+                    <span class="material-symbols-rounded">person</span>
+                    <h3>Employees</h3>
+                </a>
+                <a href="jobs.html">
+                    <span class="material-symbols-rounded">business_center</span>
+                    <h3>Jobs</h3>
+                </a>
+                <a href="meetings.html">
+                    <span class="material-symbols-rounded">group</span>
+                    <h3>Meetings</h3>
+                </a>
+                <a href="calendar.html">
+                    <span class="material-symbols-rounded">calendar_month</span>
+                    <h3>Calendar</h3>
+                </a>
+                <a href="report.html">
+                    <span class="material-symbols-rounded">description</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="settings.html" class="active">
+                    <span class="material-symbols-rounded">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-rounded">logout</span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- Side Bar End -->
+
+        <!-- Main Content Start -->
+        <main>
+            <h1>Profile Settings</h1>
+
+            <!-- Edit Profile Start -->
+            <div class="edit-profile">
+
+                <!-- Profile Header Card Start -->
+                <div class="profile-card">
+                    <div class="middle">
+                        <img src="./images/profile-picture-1.jpg" alt="">
+                        <div class="left">
+                            <h1>Charles Leclerc</h1>
+                            <h3 class="text-muted">Human Resource Manager</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profile Header Card End -->
+
+                <div class="form-container">
+                    <h1 class="title">Edit Profile</h1>
+                    <form action="#" onsubmit="event.preventDefault(); validateForm()">
+                        <div class="user-details">
+
+                            <div class="input-box">
+                                <label for="name" class="details">Name</label>
+                                <input type="text" id="name" placeholder="Enter your name">
+                                <small class="error"></small>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="address" class="details">Address</label>
+                                <input type="text" id="address" placeholder="Enter your address">
+                                <small class="error"></small>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="birth-date" class="details">Birth Date</label>
+                                <input type="date" id="birth-date" placeholder="Enter your birth date">
+                                <small class="error"></small>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="email" class="details">Email</label>
+                                <input type="text" id="email" placeholder="Enter your email">
+                                <small class="error"></small>
+                            </div>
+
+                            <div class="input-box">
+                                <label for="phone-number" class="details">Phone Number</label>
+                                <input type="text" id="phone-number" placeholder="Enter your phone number">
+                                <small class="error"></small>
+                            </div>
+
+                            <div class="button">
+                                <input type="submit" class="submit" value="Save Changes" >
+                                <p id="success"></p>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            
+
+            
+            
+        </main>
+        <!-- Main Content End -->
+
+        <!-- Right Side Start -->
+        <div class="right">
+            <!-- Top Right Start -->
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+            </div>
+            <!-- Top Right End -->
+        </div>
+
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="./js-files/settings.js"></script>
+    <script src="./js-files/sidebar.js"></script>
+</body>
+</html>

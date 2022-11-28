@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+
+    <!-- Material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- CSS Stylesheet -->
+    
+    <link rel="stylesheet" href="./css-files/side-bar.css">
+    <link rel="stylesheet" href="./css-files/report.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/logo/personnel-logo.png">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- Side Bar Start -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo/personnel-logo.png" alt="">
+                    <h2>PERSON<span class="primary">NEL</span></h2>
+                </div>
+                <div>
+                    <div class="close" id="close-btn">
+                        <span class="material-symbols-rounded">close</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-symbols-rounded">space_dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="employees.html">
+                    <span class="material-symbols-rounded">person</span>
+                    <h3>Employees</h3>
+                </a>
+                <a href="jobs.html">
+                    <span class="material-symbols-rounded">business_center</span>
+                    <h3>Jobs</h3>
+                </a>
+                <a href="meetings.html">
+                    <span class="material-symbols-rounded">group</span>
+                    <h3>Meetings</h3>
+                </a>
+                <a href="calendar.html">
+                    <span class="material-symbols-rounded">calendar_month</span>
+                    <h3>Calendar</h3>
+                </a>
+                <a href="report.html" class="active">
+                    <span class="material-symbols-rounded">description</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="settings.html">
+                    <span class="material-symbols-rounded">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-rounded">logout</span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- Side Bar End -->
+
+        <!-- Main Content Start -->
+        <main>
+            <h1>Report</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <!-- Insights Start -->
+            <div class="insights">
+
+                <!-- Available Positions -->
+                <div class="available-positions">
+                    <span class="material-symbols-rounded">diversity_2</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Available <br> Positions</h3>
+                            <h1>10</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>25%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">As of 2022</small>
+                </div>
+
+                <!-- Total Employees -->
+                <div class="total-employees">
+                    <span class="material-symbols-rounded">groups</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total <br> Employees</h3>
+                            <h1>30</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">As of 2022</small>
+                </div>
+
+                 <!-- New Employees -->
+                <div class="new-employees">
+                    <span class="material-symbols-rounded">group_add</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>New <br> Employees</h3>
+                            <h1>4</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>10%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">As of 2022</small>
+                </div>
+
+            </div>
+            <!-- Insights End -->
+
+            <!-- Employee Stats Start -->
+            <div class="employee-stats">
+                <h2>Employee Stats</h2>
+                <canvas id="chart-1"></canvas>
+            </div>
+            <!-- Employee Stats End -->
+            
+        </main>
+        <!-- Main Content End -->
+
+        <!-- Right Side Start -->
+        <div class="right">
+
+            <!-- Top Right Start -->
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-symbols-rounded">menu</span>
+                </button>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, <b>Charles</b></p>
+                        <small class="text-muted">Administrator</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-picture-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Top Right End -->
+
+            <!-- Gender Stats Start -->
+            <div class="gender-stats-out">
+                <h2>Gender Stats</h2>
+                <div class="gender-stats">
+                    <canvas id="chart-2"></canvas>
+                </div>
+            </div>
+            <!-- Gender Stats End -->
+
+            <!-- Meetings List Start -->
+            <div class="job-list">
+                <h2>Job List</h2>
+
+                <div class="item job">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">design_services</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Product Designer</h3>
+                            <small class="text-muted">Design the interface and experience</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="item job">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">preview</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Frontend Engineer</h3>
+                            <small class="text-muted">Build websites and design applications</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="item job">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">domain_verification</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Backend Engineer</h3>
+                            <small class="text-muted">Build and maintain server applications</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="item job">
+                    <div class="icon">
+                        <span class="material-symbols-rounded">supervisor_account</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Consultant</h3>
+                            <small class="text-muted">Analyze and consult the business</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Meetings List End -->
+
+        </div>
+
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JavaScript Files -->
+    <script src="./js-files/sidebar.js"></script>
+    <script src="./js-files/report.js"></script>
+
+</body>
+</html>
+
+
